@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://0d4jg5mcuo0y"]
+
+[ext_resource type="PackedScene" uid="uid://ri6r6xypgmtg" path="res://Scenes/game_manager.tscn" id="1_eprhn"]
+[ext_resource type="PackedScene" uid="uid://do76d0pyu5sa3" path="res://Scenes/Tile/tile_controller.tscn" id="2_2yr56"]
+[ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="3_eprhn"]
+[ext_resource type="PackedScene" uid="uid://co0adb6e2eef8" path="res://Scenes/Collectible/star_girl_smile.tscn" id="4_56me8"]
+
+[node name="MainScene2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GameManager" parent="." node_paths=PackedStringArray("tile", "player") instance=ExtResource("1_eprhn")]
+tile = NodePath("../TileController")
+player = NodePath("../PlayerController")
+
+[node name="TileController" parent="." instance=ExtResource("2_2yr56")]
+
+[node name="PlayerController" parent="." instance=ExtResource("3_eprhn")]
+position = Vector2(0, -1)
+input_pickable = true
+
+[node name="CollectibleContainer" type="Node2D" parent="."]
+
+[node name="StarGirlSmile" parent="CollectibleContainer" instance=ExtResource("4_56me8")]
+position = Vector2(-128, 0)
+
+[node name="StarGirlSmile3" parent="CollectibleContainer" instance=ExtResource("4_56me8")]
+position = Vector2(-128, -128)
+
+[node name="StarGirlSmile2" parent="CollectibleContainer" instance=ExtResource("4_56me8")]
+position = Vector2(-128, 136)

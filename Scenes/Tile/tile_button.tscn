@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b10bu324wr77r"]
+
+[ext_resource type="Script" uid="uid://dqaal3fo8t8d" path="res://Scripts/tile_button.gd" id="1_wheow"]
+[ext_resource type="Texture2D" uid="uid://bytb7ikktnlkj" path="res://Arts/Tile/InfinityForest/Evnironment/grass_up.tres" id="1_yhutb"]
+
+[node name="TileButton" type="Button"]
+custom_minimum_size = Vector2(128, 128)
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64, 64)
+size_flags_horizontal = 3
+icon = ExtResource("1_yhutb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_wheow")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

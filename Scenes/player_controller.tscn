@@ -1,0 +1,233 @@
+[gd_scene load_steps=52 format=3 uid="uid://btmrqjcuwyafp"]
+
+[ext_resource type="Script" uid="uid://4j05qwg8ngll" path="res://Scripts/player.gd" id="1_3mnnl"]
+[ext_resource type="Texture2D" uid="uid://8e61foxjwhdd" path="res://Arts/StarIcon/shadow.tres" id="2_b4m0w"]
+[ext_resource type="Texture2D" uid="uid://df3b5qtkeyuip" path="res://Arts/Character/Yula_Dash/Yula_Dash_00.png" id="2_nbkti"]
+[ext_resource type="Texture2D" uid="uid://c6gpqmk6ggfvs" path="res://Arts/Character/Yula_Dash/Yula_Dash_01.png" id="3_b4m0w"]
+[ext_resource type="Texture2D" uid="uid://cave7qpykt4ch" path="res://Arts/Character/Yula_Dash/Yula_Dash_02.png" id="4_0dqjx"]
+[ext_resource type="Texture2D" uid="uid://c7hk3lpv4ho2w" path="res://Arts/Character/Yula_Dash/Yula_Dash_03.png" id="5_itbsg"]
+[ext_resource type="Texture2D" uid="uid://bw15phy33hjy5" path="res://Arts/Character/Yula_Dash/Yula_Dash_04.png" id="6_11fdt"]
+[ext_resource type="Texture2D" uid="uid://cxx0shmo6dsie" path="res://Arts/Character/Yula_Dash/Yula_Dash_05.png" id="7_wvry7"]
+[ext_resource type="Texture2D" uid="uid://c7i0v4o8180mq" path="res://Arts/Character/Yula_Dash/Yula_Dash_06.png" id="8_ldukc"]
+[ext_resource type="Texture2D" uid="uid://wpub0ffwe8bh" path="res://Arts/Character/Yula_Dash/Yula_Dash_07.png" id="9_jolxa"]
+[ext_resource type="Texture2D" uid="uid://bu3i38noh4vbh" path="res://Arts/Character/Yula_Dash/Yula_Dash_08.png" id="10_n74k0"]
+[ext_resource type="Texture2D" uid="uid://b0iibvkkidfqy" path="res://Arts/Character/Yula_Dash/Yula_Dash_09.png" id="11_au501"]
+[ext_resource type="Texture2D" uid="uid://b40bif12iftfj" path="res://Arts/Character/Yula_Dash/Yula_Dash_10.png" id="12_un2xf"]
+[ext_resource type="Texture2D" uid="uid://1sq2vfb4gu5l" path="res://Arts/Character/Yula_Dash/Yula_Dash_11.png" id="13_tfqui"]
+[ext_resource type="Texture2D" uid="uid://31mttf5uaq48" path="res://Arts/Character/Yula_Dash/Yula_Dash_12.png" id="14_u3fxv"]
+[ext_resource type="Texture2D" uid="uid://cubibyonlodt5" path="res://Arts/Character/Yula_Dash/Yula_Dash_13.png" id="15_pdoij"]
+[ext_resource type="Texture2D" uid="uid://d4fgqsluf4t1k" path="res://Arts/Character/Yula_Dash/Yula_Dash_14.png" id="16_tiuc4"]
+[ext_resource type="Texture2D" uid="uid://dyindjd475jgy" path="res://Arts/Character/Yula_Idle/Yula Idle_00.png" id="17_a0ytf"]
+[ext_resource type="Texture2D" uid="uid://otajugtfilcd" path="res://Arts/Character/Yula_Idle/Yula Idle_01.png" id="18_j52iy"]
+[ext_resource type="Texture2D" uid="uid://dcq5icf0p3rh4" path="res://Arts/Character/Yula_Idle/Yula Idle_02.png" id="19_v6rp7"]
+[ext_resource type="Texture2D" uid="uid://dui8jbximqqik" path="res://Arts/Character/Yula_Idle/Yula Idle_03.png" id="20_6ho0l"]
+[ext_resource type="Texture2D" uid="uid://c3uqqtlvikdi7" path="res://Arts/Character/Yula_Idle/Yula Idle_04.png" id="21_uveop"]
+[ext_resource type="Texture2D" uid="uid://cujy2lfb3dglj" path="res://Arts/Character/Yula_Idle/Yula Idle_05.png" id="22_mkd0m"]
+[ext_resource type="Texture2D" uid="uid://tws3vfcuuhuh" path="res://Arts/Character/Yula_Idle/Yula Idle_06.png" id="23_hn7vl"]
+[ext_resource type="Texture2D" uid="uid://dtkelrlgulrd7" path="res://Arts/Character/Yula_Idle/Yula Idle_07.png" id="24_fwoio"]
+[ext_resource type="Texture2D" uid="uid://bgs5hyv4xqeee" path="res://Arts/Character/Yula_Idle/Yula Idle_08.png" id="25_7gy4x"]
+[ext_resource type="Texture2D" uid="uid://g4f1tm0ti8bg" path="res://Arts/Character/Yula_Idle/Yula Idle_09.png" id="26_a2mne"]
+[ext_resource type="Texture2D" uid="uid://c3tqhqis4wwq7" path="res://Arts/Character/Yula_Idle/Yula Idle_10.png" id="27_08liy"]
+[ext_resource type="Texture2D" uid="uid://bnh81qdur44sf" path="res://Arts/Character/Yula_Idle/Yula Idle_11.png" id="28_rd851"]
+[ext_resource type="Texture2D" uid="uid://cmy7mnlrkmm5n" path="res://Arts/Character/Yula_Idle/Yula Idle_12.png" id="29_tkwlo"]
+[ext_resource type="Texture2D" uid="uid://cf3hyrnixht4d" path="res://Arts/Character/Yula_Idle/Yula Idle_13.png" id="30_wlm7d"]
+[ext_resource type="Texture2D" uid="uid://bsy7tkk4sv3td" path="res://Arts/Character/Yula_Idle/Yula Idle_14.png" id="31_n613k"]
+[ext_resource type="Texture2D" uid="uid://d15xe52if56b1" path="res://Arts/Character/Yula_Idle/Yula Idle_15.png" id="32_tjd6f"]
+[ext_resource type="Texture2D" uid="uid://c3dghkfkffj3e" path="res://Arts/Character/Yula_Idle/Yula Idle_16.png" id="33_7jdci"]
+[ext_resource type="Texture2D" uid="uid://cgw6yykpnwu36" path="res://Arts/Character/Yula_Idle/Yula Idle_17.png" id="34_8jf3w"]
+[ext_resource type="Texture2D" uid="uid://tx1teobywq1j" path="res://Arts/Character/Yula_Idle/Yula Idle_18.png" id="35_srple"]
+[ext_resource type="Texture2D" uid="uid://eubouc8fh2et" path="res://Arts/Character/Yula_Idle/Yula Idle_19.png" id="36_87i8q"]
+[ext_resource type="Texture2D" uid="uid://4igi3sq6km6i" path="res://Arts/Character/Yula_Idle/Yula Idle_20.png" id="37_6fwiq"]
+[ext_resource type="Texture2D" uid="uid://dk1womj73fdus" path="res://Arts/Character/Yula_Idle/Yula Idle_21.png" id="38_uf71i"]
+[ext_resource type="Texture2D" uid="uid://cqj5h2h8ojhaq" path="res://Arts/Character/Yula_Idle/Yula Idle_22.png" id="39_4r2hk"]
+[ext_resource type="Texture2D" uid="uid://byett70nwvsx7" path="res://Arts/Character/Yula_Idle/Yula Idle_23.png" id="40_wkv67"]
+[ext_resource type="Texture2D" uid="uid://ds2im7uyvh8fo" path="res://Arts/Character/Yula_Idle/Yula Idle_24.png" id="41_vr5q5"]
+[ext_resource type="Texture2D" uid="uid://cy2ejcthc81rb" path="res://Arts/Character/Yula_Idle/Yula Idle_25.png" id="42_8vhof"]
+[ext_resource type="Texture2D" uid="uid://b3u05b8rq80ml" path="res://Arts/Character/Yula_Idle/Yula Idle_26.png" id="43_6ykbq"]
+[ext_resource type="Texture2D" uid="uid://s6yf0mjxdkqp" path="res://Arts/Character/Yula_Idle/Yula Idle_27.png" id="44_qnj6w"]
+[ext_resource type="Texture2D" uid="uid://mv2vrv86y0ni" path="res://Arts/Character/Yula_Idle/Yula Idle_28.png" id="45_oka5x"]
+[ext_resource type="Texture2D" uid="uid://8gle4jgqp0ja" path="res://Arts/Character/Yula_Idle/Yula Idle_29.png" id="46_b8q3n"]
+[ext_resource type="Texture2D" uid="uid://mu3fnar7g2bw" path="res://Arts/Character/Yula_Idle/Yula Idle_30.png" id="47_c86j8"]
+[ext_resource type="AudioStream" uid="uid://d3iqs2m0qobon" path="res://Arts/Audio/dash_full_free.ogg" id="49_b4m0w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3mnnl"]
+size = Vector2(64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vdma7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nbkti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b4m0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0dqjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_itbsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_11fdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wvry7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ldukc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jolxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_n74k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_au501")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_un2xf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tfqui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_u3fxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pdoij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tiuc4")
+}],
+"loop": true,
+"name": &"Dash",
+"speed": 64.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_a0ytf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_j52iy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_v6rp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6ho0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_uveop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mkd0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hn7vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fwoio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7gy4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_a2mne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_08liy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_rd851")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tkwlo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wlm7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n613k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_tjd6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7jdci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8jf3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_srple")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_87i8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6fwiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_uf71i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_4r2hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_wkv67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_vr5q5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_8vhof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_6ykbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_qnj6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_oka5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_b8q3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_c86j8")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 32.0
+}]
+
+[node name="PlayerController" type="CharacterBody2D"]
+z_index = 1
+script = ExtResource("1_3mnnl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3mnnl")
+
+[node name="ViewContainer" type="Node2D" parent="."]
+
+[node name="Shadow" type="Sprite2D" parent="ViewContainer"]
+modulate = Color(0.16078432, 0.16078432, 0.16078432, 0.627451)
+position = Vector2(3.9999986, 0.99999976)
+scale = Vector2(0.31, 0.31)
+texture = ExtResource("2_b4m0w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ViewContainer"]
+position = Vector2(0, 5)
+scale = Vector2(0.14, 0.14)
+sprite_frames = SubResource("SpriteFrames_vdma7")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.8804076
+offset = Vector2(0, -311.74)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("49_b4m0w")
+volume_db = -30.638

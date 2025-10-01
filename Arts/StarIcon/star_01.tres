@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dhut1j62nleug"]
+
+[ext_resource type="Texture2D" uid="uid://cdgh4qcf8yy1q" path="res://Arts/StarIcon/collection-emoticon-icon-cute-star-cartoon-white.png" id="1_dugah"]
+
+[resource]
+atlas = ExtResource("1_dugah")
+region = Rect2(200, 40, 230, 230)

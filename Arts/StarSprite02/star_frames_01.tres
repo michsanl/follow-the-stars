@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c55fx7ud05dmw"]
+
+[ext_resource type="Texture2D" uid="uid://b7afiiq2csmwy" path="res://Arts/StarSprite02/freepik__background__39899.png" id="1_k8ya1"]
+
+[resource]
+atlas = ExtResource("1_k8ya1")
+region = Rect2(740, 925, 237, 237)

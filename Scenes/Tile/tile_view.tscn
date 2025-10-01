@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://cya4q58bnkhvi"]
+
+[ext_resource type="Script" uid="uid://dn67pegg6337f" path="res://Scripts/tile_view.gd" id="1_w6uq2"]
+[ext_resource type="PackedScene" uid="uid://b10bu324wr77r" path="res://Scenes/Tile/tile_button.tscn" id="2_fufry"]
+
+[node name="TileView" type="Control" node_paths=PackedStringArray("buttons")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w6uq2")
+buttons = [NodePath("GridContainer/TileButton"), NodePath("GridContainer/TileButton2"), NodePath("GridContainer/TileButton3"), NodePath("GridContainer/TileButton4"), NodePath("GridContainer/TileButton5"), NodePath("GridContainer/TileButton6"), NodePath("GridContainer/TileButton7"), NodePath("GridContainer/TileButton8"), NodePath("GridContainer/TileButton9")]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -196.0
+offset_right = 196.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="TileButton" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+size_flags_horizontal = 1
+
+[node name="TileButton2" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton3" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton4" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton5" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton6" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton7" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton8" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2
+
+[node name="TileButton9" parent="GridContainer" instance=ExtResource("2_fufry")]
+layout_mode = 2

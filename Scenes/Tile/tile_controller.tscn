@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://do76d0pyu5sa3"]
+
+[ext_resource type="Script" uid="uid://c8fpbljxpr1j" path="res://Scripts/tile_controller.gd" id="1_avuj2"]
+[ext_resource type="PackedScene" uid="uid://cya4q58bnkhvi" path="res://Scenes/Tile/tile_view.tscn" id="2_r8ug1"]
+
+[node name="TileController" type="Node" node_paths=PackedStringArray("view")]
+script = ExtResource("1_avuj2")
+view = NodePath("TileView")
+
+[node name="TileView" parent="." instance=ExtResource("2_r8ug1")]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -576.0
+offset_bottom = -324.0
