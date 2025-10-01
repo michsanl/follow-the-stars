@@ -1,7 +1,0 @@
-[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://d25rqgdhby2ye"]
-
-[ext_resource type="Texture2D" uid="uid://c7e4ljwltfraw" path="res://Arts/Tile/InfinityForest/Evnironment/Enviroment-Forest.png" id="1_q3fnj"]
-
-[resource]
-atlas = ExtResource("1_q3fnj")
-region = Rect2(0, 64, 64, 64)

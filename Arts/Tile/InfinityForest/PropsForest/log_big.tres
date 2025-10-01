@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://te3unvf0dcs7"]
+
+[ext_resource type="Texture2D" uid="uid://dlmicke8qsdkt" path="res://Arts/Tile/InfinityForest/PropsForest/Props-Forest.png" id="1_0f1gc"]
+
+[resource]
+atlas = ExtResource("1_0f1gc")
+region = Rect2(0, 32, 32, 16)

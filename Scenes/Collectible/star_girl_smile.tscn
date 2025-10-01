@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://co0adb6e2eef8"]
 
-[ext_resource type="Script" uid="uid://b6hwtw530wa5f" path="res://Scenes/Collectible/collectible.gd" id="1_0b3ww"]
+[ext_resource type="Script" uid="uid://b6hwtw530wa5f" path="res://Scripts/collectible.gd" id="1_0b3ww"]
 [ext_resource type="Texture2D" uid="uid://c55fx7ud05dmw" path="res://Arts/StarSprite02/star_frames_01.tres" id="1_ku5kb"]
 [ext_resource type="Texture2D" uid="uid://2csntyqdu38b" path="res://Arts/StarSprite02/star_frames_03.tres" id="3_5lith"]
 [ext_resource type="Script" uid="uid://e8qoxe3nmmww" path="res://Scripts/star_animated_sprite.gd" id="3_ku5kb"]

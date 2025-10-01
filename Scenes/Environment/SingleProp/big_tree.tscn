@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbgsjiryvcgcl"]
+
+[ext_resource type="PackedScene" uid="uid://i5uhst8naqqx" path="res://Scenes/Environment/SingleProp/base_prop.tscn" id="1_gvjwv"]
+[ext_resource type="Texture2D" uid="uid://d2odndy43yddd" path="res://Arts/Tile/InfinityForest/PropsForest/tree_big.tres" id="1_mmvc6"]
+
+[node name="BigTree" instance=ExtResource("1_gvjwv")]
+texture = ExtResource("1_mmvc6")

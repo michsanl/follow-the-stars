@@ -8,6 +8,7 @@ script = ExtResource("1_avuj2")
 view = NodePath("TileView")
 
 [node name="TileView" parent="." instance=ExtResource("2_r8ug1")]
+visible = false
 offset_left = -576.0
 offset_top = -324.0
 offset_right = -576.0
