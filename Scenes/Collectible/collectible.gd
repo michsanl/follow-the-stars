@@ -1,16 +1,17 @@
 class_name Collectible
 extends Area2D
 
-@export var start_texture: Texture2D
 @export var end_texture: Texture2D
 
 @onready var audio = $AudioStreamPlayer2D
-@onready var sprite: Sprite2D = $Sprite2D
+@onready var collider = $CollisionShape2D
+@onready var view = $View
  
 func _on_body_entered(_body: Node2D) -> void:
-	sprite.texture = end_texture
 	audio.play()
-	hide()
-	await get_tree().create_timer(1.0).timeout
-	process_mode = Node.PROCESS_MODE_DISABLED 
+	view.texture = end_texture
+	set_deferred("monitorable", false)
+	set_deferred("monitoring", false)
+	await get_tree().create_timer(0.75).timeout
+	self.queue_free()
 	

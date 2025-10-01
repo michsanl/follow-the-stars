@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://0d4jg5mcuo0y"]
+[gd_scene load_steps=6 format=3 uid="uid://0d4jg5mcuo0y"]
 
 [ext_resource type="PackedScene" uid="uid://ri6r6xypgmtg" path="res://Scenes/game_manager.tscn" id="1_eprhn"]
 [ext_resource type="PackedScene" uid="uid://do76d0pyu5sa3" path="res://Scenes/Tile/tile_controller.tscn" id="2_2yr56"]
 [ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="3_eprhn"]
 [ext_resource type="PackedScene" uid="uid://co0adb6e2eef8" path="res://Scenes/Collectible/star_girl_smile.tscn" id="4_56me8"]
+[ext_resource type="Texture2D" uid="uid://km4xv0yx3s4c" path="res://Arts/Tile/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp" id="5_nvtsh"]
 
 [node name="MainScene2D" type="Node2D"]
 
@@ -29,3 +30,9 @@ position = Vector2(-128, -128)
 
 [node name="StarGirlSmile2" parent="CollectibleContainer" instance=ExtResource("4_56me8")]
 position = Vector2(-128, 136)
+
+[node name="MagicForestCuteAnimalsPixelArtSeamlessBackgroundLocationForestDayLandscapeGameApplicationMagic159953113" type="Sprite2D" parent="CollectibleContainer"]
+self_modulate = Color(0.63375676, 0.6337568, 0.63375676, 1)
+position = Vector2(0, 1)
+scale = Vector2(0.7779817, 0.77798164)
+texture = ExtResource("5_nvtsh")
