@@ -1,7 +1,7 @@
 class_name GameManager
 extends Node
 
-@export var tile: TileController
+@export var tile: Tile
 @export var player: Player
 
 func _ready() -> void:

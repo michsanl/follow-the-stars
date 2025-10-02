@@ -1,0 +1,6 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dt67xd25rp63d"]
+
+[ext_resource type="Texture2D" uid="uid://cdgh4qcf8yy1q" path="res://Arts/StarIcon/collection-emoticon-icon-cute-star-cartoon-white.png" id="1_e0ro6"]
+
+[resource]
+atlas = ExtResource("1_e0ro6")

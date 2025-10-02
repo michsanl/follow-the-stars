@@ -1,4 +1,4 @@
-class_name TileController
+class_name Tile
 extends Node
 
 signal tile_pressed(position: Vector2)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq2ielt5dnngl"]
+
+[ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="2_le6u2"]
+[ext_resource type="PackedScene" uid="uid://chbo77chwdwa4" path="res://Scenes/Collectible/small_collectible.tscn" id="3_efa0e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.84, 2.84)
+position_smoothing_enabled = true
+
+[node name="PlayerController" parent="." instance=ExtResource("2_le6u2")]
+scale = Vector2(0.395, 0.395)
+move_distance = 32.0
+
+[node name="Collectibles" type="Node2D" parent="."]
+
+[node name="StarCollectible" parent="Collectibles" instance=ExtResource("3_efa0e")]
+position = Vector2(-32, 0)
+
+[node name="StarCollectible2" parent="Collectibles" instance=ExtResource("3_efa0e")]
+position = Vector2(32, -1)

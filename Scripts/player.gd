@@ -2,6 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 @export var move_duration: float = 0.125
+@export var move_distance: float = 16.0
 
 var move_dir: Vector2 = Vector2.ZERO
 var is_moving: bool = false
@@ -64,7 +65,7 @@ func move_to_direction(direction: Vector2):
 	tween.tween_property(
 		self, 
 		"position", 
-		position + direction * 132, 
+		position + direction * move_distance, 
 		move_duration
 	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	await tween.finished

@@ -1,3 +1,4 @@
+class_name CollectibleSpawner
 extends Node2D
 
 @export var collectible_scene: PackedScene

@@ -1,0 +1,6 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bvtxm4crk6ydp"]
+
+[ext_resource type="Texture2D" uid="uid://ffm828qbifq7" path="res://Arts/Tile/InfinityForest/PropsForest/Props-Forest.png" id="1_uuvg7"]
+
+[resource]
+atlas = ExtResource("1_uuvg7")

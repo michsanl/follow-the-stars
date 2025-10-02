@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbgf7xk5h5al6"]
+
+[ext_resource type="PackedScene" uid="uid://c1402twixs255" path="res://Scenes/Level2Scene/tile_controller.tscn" id="1_mueok"]
+
+[node name="View" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect2" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect3" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect4" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect5" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect6" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect7" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect8" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("1_mueok")]
+layout_mode = 2
+
+[node name="TextureRect9" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("1_mueok")]
+layout_mode = 2
