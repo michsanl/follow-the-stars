@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Android Game Prototype"
-run/main_scene="uid://bxx5j410t4b8d"
+run/main_scene="uid://clt8hd03t36k1"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Arts/icon.svg"
 

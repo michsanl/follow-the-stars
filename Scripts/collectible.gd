@@ -30,6 +30,7 @@ func despawn():
 	view.texture = end_texture
 	audio.play()
 	await get_tree().create_timer(0.75).timeout
+	audio.stop()
 	hide()
 	
 	collected.emit(self)

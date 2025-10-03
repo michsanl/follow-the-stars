@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bxx5j410t4b8d"]
 
 [ext_resource type="Texture2D" uid="uid://km4xv0yx3s4c" path="res://Arts/Tile/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp" id="1_wlh1s"]
-[ext_resource type="Script" uid="uid://dwubok3o7exwx" path="res://Scenes/Level2Scene/player_manager.gd" id="2_tsrpd"]
+[ext_resource type="Script" uid="uid://dwubok3o7exwx" path="res://Scenes/Levels/Level2Scene/player_manager.gd" id="2_tsrpd"]
 [ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="2_xkbrh"]
-[ext_resource type="PackedScene" uid="uid://dbgf7xk5h5al6" path="res://Scenes/Level2Scene/level_2_view.tscn" id="3_tsrpd"]
-[ext_resource type="Script" uid="uid://dhcw1sxoiw0kw" path="res://Scenes/collectible_spawner.gd" id="5_tsrpd"]
+[ext_resource type="PackedScene" uid="uid://dbgf7xk5h5al6" path="res://Scenes/Levels/Level2Scene/level_2_view.tscn" id="3_tsrpd"]
+[ext_resource type="PackedScene" uid="uid://iaya80l5cgns" path="res://Scenes/Levels/MainMenuScene/level_button.tscn" id="5_gg0w0"]
 
 [node name="Level2" type="Node2D"]
 
@@ -22,10 +22,6 @@ move_distance = 128.0
 
 [node name="View" parent="." instance=ExtResource("3_tsrpd")]
 
-[node name="CollectibleSpawner" type="Node2D" parent="."]
-script = ExtResource("5_tsrpd")
-metadata/_custom_type_script = "uid://dhcw1sxoiw0kw"
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="CollectibleSpots" type="Node2D" parent="."]
-
-[node name="Node2D" type="Node2D" parent="CollectibleSpots"]
+[node name="LevelButton" parent="CanvasLayer" instance=ExtResource("5_gg0w0")]

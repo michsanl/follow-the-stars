@@ -1,16 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://0d4jg5mcuo0y"]
+[gd_scene load_steps=9 format=3 uid="uid://0d4jg5mcuo0y"]
 
-[ext_resource type="PackedScene" uid="uid://ri6r6xypgmtg" path="res://Scenes/game_manager.tscn" id="1_nm7t2"]
-[ext_resource type="PackedScene" uid="uid://do76d0pyu5sa3" path="res://Scenes/Tile/tile_controller.tscn" id="2_p3dy8"]
-[ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="3_4pnda"]
-[ext_resource type="Script" uid="uid://dhcw1sxoiw0kw" path="res://Scenes/collectible_spawner.gd" id="4_1bh3c"]
-[ext_resource type="PackedScene" uid="uid://co0adb6e2eef8" path="res://Scenes/Collectible/star_girl_smile.tscn" id="5_n5c4f"]
-[ext_resource type="PackedScene" uid="uid://cya4q58bnkhvi" path="res://Scenes/Tile/tile_view.tscn" id="6_vgaoe"]
+[ext_resource type="PackedScene" uid="uid://ri6r6xypgmtg" path="res://Scenes/game_manager.tscn" id="1_k3i5e"]
+[ext_resource type="PackedScene" uid="uid://do76d0pyu5sa3" path="res://Scenes/Tile/tile_controller.tscn" id="2_ejsdh"]
+[ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="3_0l8vb"]
+[ext_resource type="Script" uid="uid://dhcw1sxoiw0kw" path="res://Scenes/collectible_spawner.gd" id="4_5rsdx"]
+[ext_resource type="PackedScene" uid="uid://co0adb6e2eef8" path="res://Scenes/Collectible/star_girl_smile.tscn" id="5_uaw58"]
+[ext_resource type="PackedScene" uid="uid://iaya80l5cgns" path="res://Scenes/Levels/MainMenuScene/level_button.tscn" id="7_0klwl"]
+[ext_resource type="PackedScene" uid="uid://cya4q58bnkhvi" path="res://Scenes/Tile/tile_view.tscn" id="7_jc50k"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1bh3c"]
 load_path = "res://.godot/imported/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp-fe53ccbd82e988abad7f24bd7f6e765f.ctex"
 
-[node name="MainScene2D" type="Node2D"]
+[node name="Level01" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -20,7 +21,7 @@ position = Vector2(0, 1)
 scale = Vector2(0.7779817, 0.77798164)
 texture = SubResource("CompressedTexture2D_1bh3c")
 
-[node name="GameManager" parent="." node_paths=PackedStringArray("tile", "player") instance=ExtResource("1_nm7t2")]
+[node name="GameManager" parent="." node_paths=PackedStringArray("tile", "player") instance=ExtResource("1_k3i5e")]
 tile = NodePath("../TileController")
 player = NodePath("../PlayerController")
 
@@ -29,17 +30,17 @@ player = NodePath("../PlayerController")
 [node name="position" type="Node2D" parent="TilePositions"]
 position = Vector2(-132, -132)
 
-[node name="TileController" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_p3dy8")]
+[node name="TileController" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_ejsdh")]
 view = NodePath("../TileView")
 
-[node name="PlayerController" parent="." instance=ExtResource("3_4pnda")]
+[node name="PlayerController" parent="." instance=ExtResource("3_0l8vb")]
 position = Vector2(0, -1)
 input_pickable = true
 move_distance = 128.0
 
 [node name="CollectibleSpawner" type="Node2D" parent="."]
-script = ExtResource("4_1bh3c")
-collectible_scene = ExtResource("5_n5c4f")
+script = ExtResource("4_5rsdx")
+collectible_scene = ExtResource("5_uaw58")
 
 [node name="Position" type="Node2D" parent="CollectibleSpawner"]
 position = Vector2(-132, -132)
@@ -67,4 +68,8 @@ position = Vector2(0, 132)
 [node name="Position9" type="Node2D" parent="CollectibleSpawner"]
 position = Vector2(132, 132)
 
-[node name="TileView" parent="." instance=ExtResource("6_vgaoe")]
+[node name="TileView" parent="." instance=ExtResource("7_jc50k")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelButton" parent="CanvasLayer" instance=ExtResource("7_0klwl")]

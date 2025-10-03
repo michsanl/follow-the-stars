@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dn67pegg6337f" path="res://Scripts/tile_view.gd" id="1_w6uq2"]
 [ext_resource type="PackedScene" uid="uid://b10bu324wr77r" path="res://Scenes/Tile/tile_button.tscn" id="2_fufry"]
-[ext_resource type="Texture2D" uid="uid://dlmicke8qsdkt" path="res://Arts/Tile/InfinityForest/PropsForest/Props-Forest.png" id="3_6x0cc"]
+[ext_resource type="Texture2D" uid="uid://ffm828qbifq7" path="res://Arts/Tile/InfinityForest/PropsForest/Props-Forest.png" id="3_6x0cc"]
 [ext_resource type="TileSet" uid="uid://bnfo87fy6ncn6" path="res://Arts/Tile/InfinityForest/Evnironment/Environment.tres" id="4_2blrq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2blrq"]

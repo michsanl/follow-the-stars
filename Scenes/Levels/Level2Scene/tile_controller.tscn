@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1402twixs255"]
 
-[ext_resource type="Script" uid="uid://cwsy5as0dyjf5" path="res://Scenes/Level2Scene/level_2_tile.gd" id="1_fipg2"]
+[ext_resource type="Script" uid="uid://cwsy5as0dyjf5" path="res://Scenes/Levels/Level2Scene/level_2_tile.gd" id="1_fipg2"]
 [ext_resource type="Texture2D" uid="uid://bytb7ikktnlkj" path="res://Arts/Tile/InfinityForest/Evnironment/grass_up.tres" id="2_sldg4"]
 [ext_resource type="PackedScene" uid="uid://co0adb6e2eef8" path="res://Scenes/Collectible/star_girl_smile.tscn" id="3_sldg4"]
 [ext_resource type="Texture2D" uid="uid://2csntyqdu38b" path="res://Arts/StarSprite02/star_frames_03.tres" id="4_vi4bu"]

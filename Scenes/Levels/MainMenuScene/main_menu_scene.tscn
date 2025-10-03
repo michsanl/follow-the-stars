@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://clt8hd03t36k1"]
+
+[ext_resource type="Texture2D" uid="uid://km4xv0yx3s4c" path="res://Arts/Tile/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp" id="1_jja7m"]
+[ext_resource type="PackedScene" uid="uid://vevtvwwq8i3i" path="res://Scenes/MainMenuScene/debuggg_button.tscn" id="2_56leo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jja7m"]
+font_size = 106
+
+[node name="MainMenuScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MagicForestCuteAnimalsPixelArtSeamlessBackgroundLocationForestDayLandscapeGameApplicationMagic159953113" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jja7m")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -148.0
+offset_right = 264.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MAIN MENU
+"
+label_settings = SubResource("LabelSettings_jja7m")
+
+[node name="DebugButton" parent="." instance=ExtResource("2_56leo")]
+layout_mode = 1

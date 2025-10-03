@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dbgf7xk5h5al6"]
 
-[ext_resource type="PackedScene" uid="uid://c1402twixs255" path="res://Scenes/Level2Scene/tile_controller.tscn" id="1_mueok"]
+[ext_resource type="PackedScene" uid="uid://c1402twixs255" path="res://Scenes/Levels/Level2Scene/tile_controller.tscn" id="1_mueok"]
 
 [node name="View" type="Control"]
 layout_mode = 3

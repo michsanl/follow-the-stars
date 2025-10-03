@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://clt8hd03t36k1"]
+
+[ext_resource type="Texture2D" uid="uid://km4xv0yx3s4c" path="res://Arts/Tile/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp" id="1_jja7m"]
+[ext_resource type="PackedScene" uid="uid://c642sp01joyx" path="res://Scenes/MainMenuScene/debug_button.tscn" id="2_56leo"]
+[ext_resource type="PackedScene" uid="uid://0d4jg5mcuo0y" path="res://Scenes/level_1_scene.tscn" id="3_2ojsq"]
+[ext_resource type="PackedScene" uid="uid://bxx5j410t4b8d" path="res://Scenes/Level2Scene/level_2_scene.tscn" id="4_a7etm"]
+[ext_resource type="PackedScene" uid="uid://cdh6bmapr5oq4" path="res://Scenes/Level3Scene/level_3_scene.tscn" id="5_mxhv7"]
+[ext_resource type="PackedScene" uid="uid://cr7tb2q6hw2ty" path="res://Scenes/Level4Scene/level_4_scene.tscn" id="6_3i8xp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jja7m"]
+font_size = 106
+
+[node name="MainMenuScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MagicForestCuteAnimalsPixelArtSeamlessBackgroundLocationForestDayLandscapeGameApplicationMagic159953113" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jja7m")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -148.0
+offset_right = 264.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MAIN MENU
+"
+label_settings = SubResource("LabelSettings_jja7m")
+
+[node name="DebugButton" parent="." instance=ExtResource("2_56leo")]
+layout_mode = 1
+offset_left = -144.0
+offset_top = 8.0
+offset_right = -32.0
+offset_bottom = 432.0
+
+[node name="Level1" parent="." instance=ExtResource("3_2ojsq")]
+
+[node name="Level2" parent="." instance=ExtResource("4_a7etm")]
+
+[node name="Level3Scene" parent="." instance=ExtResource("5_mxhv7")]
+
+[node name="Level4Scene" parent="." instance=ExtResource("6_3i8xp")]

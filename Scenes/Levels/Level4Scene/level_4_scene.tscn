@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cr7tb2q6hw2ty"]
+
+[ext_resource type="Texture2D" uid="uid://km4xv0yx3s4c" path="res://Arts/Tile/magic-forest-cute-animals-pixel-art-seamless-background-location-forest-day-landscape-game-application-magic-159953113.webp" id="1_2vg2s"]
+[ext_resource type="Script" uid="uid://dwubok3o7exwx" path="res://Scenes/Levels/Level2Scene/player_manager.gd" id="2_2p65k"]
+[ext_resource type="PackedScene" uid="uid://btmrqjcuwyafp" path="res://Scenes/player_controller.tscn" id="3_i0i7v"]
+[ext_resource type="PackedScene" uid="uid://cfrft53fgcx15" path="res://Scenes/Levels/Level4Scene/level_4_view.tscn" id="4_2p65k"]
+[ext_resource type="PackedScene" uid="uid://iaya80l5cgns" path="res://Scenes/Levels/MainMenuScene/level_button.tscn" id="5_7tekb"]
+
+[node name="Level4Scene" type="Node2D"]
+
+[node name="MagicForestCuteAnimalsPixelArtSeamlessBackgroundLocationForestDayLandscapeGameApplicationMagic159953113" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("1_2vg2s")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PlayerManager" type="Node" parent="."]
+script = ExtResource("2_2p65k")
+
+[node name="PlayerController" parent="." instance=ExtResource("3_i0i7v")]
+position = Vector2(0, 64)
+move_distance = 128.0
+
+[node name="Level4View" parent="." instance=ExtResource("4_2p65k")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelButton" parent="CanvasLayer" instance=ExtResource("5_7tekb")]
